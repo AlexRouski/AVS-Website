@@ -1,0 +1,343 @@
+p {
+  margin: 0;
+}
+
+header {
+  border: 5px solid #006699;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-container {
+  background-color: #006699;
+  color: white;
+  font-size: 24px;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-container a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-container-2 {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+/* .logo {
+  flex-basis: 40%;
+  position: relative;
+} */
+
+.logo img {
+  width: 50%;
+  padding: 0 32px;
+  /* margin-left: 50px; */
+}
+
+.logo p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+  /* top: 80px; */
+  bottom: 20%;
+  left: 31%;
+  font-size: 16px;
+  color: brown;
+}
+
+.nav-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* position: relative;
+  flex-basis: 60%; */
+}
+
+.nav-services p {
+  margin: 0;
+  padding: 16px;
+  /* position: absolute;
+  top: 0;
+  left: 70px; */
+  font-size: 20px;
+  color: red;
+}
+
+.services {
+  margin: 0;
+  /* position: relative;
+  top: 80px; */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.services-content {
+  position: relative;
+  min-width: 15%;
+  /* flex-basis: 20%; */
+  text-align: center;
+  background-color: #006699;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 8px 0;
+  /* margin-right: 50px; */
+  font-size: 18px;
+  color: white;
+  transition: background-color 0.2s ease-out;
+}
+
+.services-content:hover {
+  /* background-color: #4db4d3; */
+  background-color: rgba(0, 102, 153, 0.5);
+}
+
+.services a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content {
+  top: 37px;
+  display: none;
+  position: absolute;
+  /* background-color: #4db4d3; */
+  /* background-color: rgba(0, 102, 153, 1); */
+  width: 100%;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 20px 0;
+  cursor: pointer;
+  background-color: rgba(0, 102, 153, 1);
+}
+
+.dropdown-content a:hover {
+  /* background-color: #f1f1f1; */
+  /* background-color: rgba(77, 180, 211, 0.75); */
+  background-color: rgba(0, 102, 153, 0.75);
+}
+
+.services-content:hover .dropdown-content {
+  /* background-color: #4db4d3; */
+  display: block;
+}
+
+/* ==================================================== Main content ===========================================================*/
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-content {
+  padding-left: 2%;
+  flex: 1;
+}
+
+.info-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-logos img {
+  padding: 0 5%;
+  width: 10%;
+}
+
+.info-content h2 {
+  margin: 0 auto;
+  padding: 10px 15px;
+  max-width: 250px;
+  color: #769b20;
+  /* border: 5px solid aquamarine; */
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.info-content ul {
+  margin-top: 15px;
+  border: 5px solid #006699;
+  border-radius: 50px;
+  padding: 15px 12%;
+  /* background-color: lightsteelblue; */
+  color: #006699;
+  font-size: 1.75rem;
+  /* list-style-image: url("./assets/CheckMark.jpg"); */
+}
+
+.info-content ul li {
+  list-style: none;
+}
+
+.info-content ul li::before {
+  content: "";
+  display: inline-block;
+  background-image: url("./assets/CheckMark.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  margin-right: 5%;
+}
+
+.side-picture {
+  flex: 1;
+}
+
+.side-picture img {
+  /* display: block;
+  margin: 0 auto; */
+  margin-left: 29%;
+  width: 67%;
+}
+
+/* ======================================================= Footer ==============================================================*/
+
+footer {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 150px;
+  cursor: pointer;
+}
+
+footer img:hover {
+  opacity: 0.5;
+}
+
+footer img:active {
+  transform: translateY(2px);
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background: #006699;
+  border: 3px solid darkgrey;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 102, 153, 0.75);
+  /* border: 6px solid darkgrey; */
+  /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.24),
+    0 0px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+button:active {
+  transform: translateY(2px);
+}
+/* button.email {
+  background-image: url(./assets/Email-Us.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 20%;
+} */
+
+/* ================================================= Form ===================================================================== */
+
+.form-container {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+form {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1.5em;
+  background-color: #006699;
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 65%;
+  border-radius: 20px;
+  border: none;
+  padding: 0.75em;
+}
+
+textarea {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  background: #769b20;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: rgba(118, 155, 32, 0.75);
+}
+
+input[type="submit"]:active {
+  transform: translateY(2px);
+}
+
+.close {
+  position: absolute;
+  top: 1%;
+  left: 94%;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
